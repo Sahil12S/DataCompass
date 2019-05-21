@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+}
+
+div.a {
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    outline-style: solid;
+    font-size: 25px;
+    width: max-content;
+    /* padding: 1px; */
+}
+
+div.b {
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    outline-style: solid;
+    font-size: 45px;
+    width: max-content;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
