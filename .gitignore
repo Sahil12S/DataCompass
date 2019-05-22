@@ -1,0 +1,5 @@
+# VS Code File
+.vscode/
+
+# Virtual Environment
+env/
