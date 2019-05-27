@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'goldapp/css/style.css' %}">
+</head>
+
+<body>
+    <div class="container1">
+        <div class='a'>
+            Your gold:
+        </div>
+        <div class="b">
+            {{gold}}
+        </div>
+        <div class="c">
+            <form action="/reset" , method="POST" , name="formR">
+                {% csrf_token %}
+                <input type="submit" value="Reset" name="reset">
+            </form>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="form1">
+            <form action="/process_money" method="POST" name="form1">
+                {% csrf_token %}
+                <h3>Farm</h3>
+                (earns 10-20 golds)
+                <br />
+                <br />
+
+                <input type="submit" value="Find Gold!" name="farm" />
+            </form>
+        </div>
+        <div class="form2">
+            <form action="/process_money" method="POST">
+                {% csrf_token %}
+                <h3>Cave</h3>
+                (earns 5-10 golds)
+                <br />
+                <br />
+
+                <input type="submit" value="Find Gold!" name="cave" />
+            </form>
+        </div>
+        <div class="form3">
+            <form action="/process_money" method="POST">
+                {% csrf_token %}
+                <h3>House</h3>
+                (earns 2-5 golds)
+                <br />
+                <br />
+
+                <input type="submit" value="Find Gold!" name="house" />
+            </form>
+        </div>
+        <div class="form4">
+            <form action="/process_money" method="POST">
+                {% csrf_token %}
+                <h3>Casino</h3>
+                (earns/takes 0-50 golds)
+                <br />
+                <br />
+
+                <input type="submit" value="Find Gold!" name="casino" />
+            </form>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div class="container3">
+        Activities:
+        <br />
+        <textarea readonly class="text" rows=16>
+            {% for ac in activities reversed %}
+            {{ ac }}
+            {% endfor %}
+        </textarea>
+    </div>
+
+</body>
+
+</html>

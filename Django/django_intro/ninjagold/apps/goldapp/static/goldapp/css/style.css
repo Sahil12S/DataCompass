@@ -1,0 +1,102 @@
+body {
+    background-color: white;
+}
+
+div.container1 {
+    margin: 2%;
+    display: flex;
+    width: 750px;
+    font-family: 'Courier New', Courier, monospace;
+    /* text-align: center; */
+    font-size: 15px;
+
+}
+div.container2 {
+    /* margin: 2%; */
+    display: flex;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    /* text-align: center; */
+    font-size: 15px;
+}
+div.container3 {
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+div.a {
+    width: 130px;
+}
+
+div.b {
+    width: 200px;
+    outline-style: solid;
+    outline-width: 1px;
+    flex-grow: 1;
+}
+div.c {
+    width: 420px;
+    float: right;
+    text-align: right;
+    flex-grow: 1;
+}
+
+div.form1 {
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    outline-style: solid;
+    outline-width: 2px;
+    font-size: 20px;
+    width: 18%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+div.form2 {
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    outline-style: solid;
+    outline-width: 2px;
+    font-size: 20px;
+    width: 18%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+div.form3 {
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    outline-style: solid;
+    outline-width: 2px;
+    font-size: 20px;
+    width: 18%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+div.form4 {
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    outline-style: solid;
+    outline-width: 2px;
+    font-size: 20px;
+    width: 18%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+textarea.text {
+    width: 100%;
+    /* height: 150px; */
+    /* outline-width: 8px; */
+}
