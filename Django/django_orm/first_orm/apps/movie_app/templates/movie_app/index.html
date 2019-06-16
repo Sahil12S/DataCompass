@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Movie App</title>
+</head>
+
+<body>
+    <h1>All Movies</h1>
+    <ul>
+        {% for movie in all_movies %}
+        <li>{{ movie.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
